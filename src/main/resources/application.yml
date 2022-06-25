@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.73.128:3306/test_big_table?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+
+  redis:
+    host: 192.168.73.128
+    port: 6379
+    database: 0
+    jedis:
+      pool:
+        enabled: true
+        max-active: 8
+        min-idle: 1
+        max-wait: -1ms
+        max-idle: 8
+
+
